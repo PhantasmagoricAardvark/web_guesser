@@ -10,8 +10,12 @@
 		<p>
 			<%= message %>
 			<br><br>
-			The SECRET NUMBER is 
-
+			The SECRET NUMBER is <%= Num.show %> 
+			<br><br>
+			<%= Guesses.show %>
+			<% if cheat == "true" %>
+				<%= 5 %>
+			<% end %>
 		</p>
 		
 		<form>
